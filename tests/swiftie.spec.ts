@@ -1,6 +1,6 @@
 import { test, expect, chromium, Browser, BrowserContext, Page, Locator, TestInfo } from '@playwright/test';
 
-test.describe('Janus AI - Amazon Challenge', async () => {
+test.describe('T Swift 1989 Album', async () => {
     let browser: Browser;
     let context: BrowserContext;
     let page: Page;
