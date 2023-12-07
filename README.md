@@ -1,6 +1,4 @@
-# SDET Take-Home
-
-This repository contains a take-home coding challenge for an SDET (Software Development Engineer in Test) role at Fetch. It's currently set to private, so only people with permission can view my solution.
+# Amazon Challenge
 
 ## CI/CD
 
@@ -8,32 +6,19 @@ You can use the manual "Run Workflow" button in the "Actions" tab of the repo to
 
 Otherwise, continue to the instructions for running my solution on your machine.
 
-## Prerequisites
-
-Before you can run the program, make sure you have the following dependencies installed:
-
-- [Node.js](https://nodejs.org/) (>= 18.15.0)
-- [TypeScript](https://www.typescriptlang.org/) (>= 5.2.2)
-
-You can install Node.js by visiting the [official Node.js website](https://nodejs.org/) and downloading the latest LTS version. TypeScript can be installed globally using npm:
-
-```bash
-npm install -g typescript
-```
-
 ## Installation
 
 1. Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/boutchersj/fetch_sdet_challenge.git
+git clone https://github.com/boutchersj/amazon_challenge.git
 
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd fetch_sdet_challenge
+cd amazon_challenge
 ```
 
 3. Install the project dependencies:
@@ -45,3 +30,27 @@ npm install
 ## Running the Tests
 
 You can run my solution using ```npm test```
+
+## Cool Features
+
+1. Page Object Model
+
+I'm doing this my own unique way. Playwright doesn't describe my approach in the docs, but I think it's easier to read.
+
+I admittedly "stole" this approach from my mentor at Fetch who built a Ruby/RSpec/Capybara/SitePrism/Appium framework. I loved their concept of "Sections" as a way to group locators for a section of the page. It's helpful for components mostly, but I'm demoing it here.
+
+2. HTML Report
+
+This is an artifact I'm publishing in the GitHub Actions workflow after the tests finish.
+
+3. Screenshots
+
+I'm taking a screenshot after each test and publishing it as an artifact after the tests finish.
+
+The screenshot files are named after the name of the test after which they were taken.
+
+4. Manual & Automatic CI Trigger
+
+The tests will automatically run when you push new code to the repo.
+
+You can also use the manual trigger to run the tests without ever leaving GitHub.
