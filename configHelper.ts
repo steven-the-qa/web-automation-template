@@ -17,7 +17,7 @@ function determineViewportSize(): ViewportSize {
             resolution = macBookAir
             break;
         default:
-            resolution = iPhone12
+            resolution = macBookAir
     }
 
     return resolution
