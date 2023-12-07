@@ -1,6 +1,6 @@
 export enum LocatorStrategy {
     id = 'id',
-    klass = 'class'
+    xpath = 'xpath',
 }
 
 export enum Side {
