@@ -19,7 +19,6 @@
     "@playwright/test": "^1.38.1",
     "@types/node": "^20.8.3",
     "dotenv": "^16.3.1",
-    "fs": "^0.0.1-security",
     "node": "^18.15.0",
     "typescript": "^5.2.2"
   }

@@ -1,5 +1,5 @@
 import type { Page } from 'playwright'
-import * as fs from 'fs'
+const fs = require('fs')
 
 exports.saveHTML = async (page: Page, fileName: string) => {
     const pageSource = await page.content()
