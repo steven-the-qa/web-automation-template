@@ -1,4 +1,5 @@
 node_modules
 package-lock.json
 playwright-report
-screenshots/*
+screenshots/*.png
+screenshots/*.html
