@@ -3,7 +3,7 @@ export enum LocatorStrategy {
     xpath = 'xpath',
 }
 
-export enum Side {
-    left = 'left',
-    right = 'right'
+export type ViewportSize = {
+    width: number,
+    height: number
 }

@@ -1,4 +1,6 @@
-import { test, expect, chromium, Browser, BrowserContext, Page, Locator, TestInfo } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import type { TestInfo } from '@playwright/test';
+const { screenshot } = require('../utils')()
 import SearchResultsPage from '../pages/searchResults';
 import ProductViewPage from '../pages/productView';
 import ProductSpecsSection from '../pages/sections/productSpecs';
@@ -22,16 +24,18 @@ test.describe('T Swift 1989 Album', async () => {
     }
 
     test.beforeEach(async () => {
-        // For Debugging Only
-        // browser = await chromium.launch({ headless: false });
-        browser = await chromium.launch();
+        // For Debugging Only: Do not push uncommented
+        browser = await chromium.launch({ headless: false });
+        // For CI
+        // browser = await chromium.launch();
         context = await browser.newContext();
         page = await context.newPage();
         await page.goto('https://www.amazon.com/1989-Taylors-Version-Taylor-Swift/dp/B0CFM76QSG?content-id=amzn1.sym.cb9c3293-7215-4d97-8c71-e1fed9b4d8f1&pd_rd_i=B0CFM76QSG&pd_rd_r=180b3bdc-c298-4f86-bb91-4ef0c80d1cb8&pd_rd_w=tHKD5&pd_rd_wg=kJ0QW&pf_rd_p=cb9c3293-7215-4d97-8c71-e1fed9b4d8f1&pf_rd_r=V7JWQ7ZF2DB34CY3VM1V&ref_=Oct_d_onr_d_5174_2')
         await page.waitForLoadState('domcontentloaded')
     })
 
-    test.afterEach(async () => {
+    test.afterEach(async ({}, testInfo: TestInfo) => {
+        await screenshot(page, testInfo.title)
         await page.close()
         await context.close()
         await browser.close();
