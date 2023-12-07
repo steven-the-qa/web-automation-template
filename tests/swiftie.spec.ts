@@ -25,9 +25,9 @@ test.describe('T Swift 1989 Album', async () => {
 
     test.beforeEach(async () => {
         // For Debugging Only: Do not push uncommented
-        browser = await chromium.launch({ headless: false });
+        // browser = await chromium.launch({ headless: false });
         // For CI
-        // browser = await chromium.launch();
+        browser = await chromium.launch();
         context = await browser.newContext();
         page = await context.newPage();
         await page.goto('https://www.amazon.com/1989-Taylors-Version-Taylor-Swift/dp/B0CFM76QSG?content-id=amzn1.sym.cb9c3293-7215-4d97-8c71-e1fed9b4d8f1&pd_rd_i=B0CFM76QSG&pd_rd_r=180b3bdc-c298-4f86-bb91-4ef0c80d1cb8&pd_rd_w=tHKD5&pd_rd_wg=kJ0QW&pf_rd_p=cb9c3293-7215-4d97-8c71-e1fed9b4d8f1&pf_rd_r=V7JWQ7ZF2DB34CY3VM1V&ref_=Oct_d_onr_d_5174_2')
