@@ -1,0 +1,24 @@
+{
+  "name": "amazon_challenge",
+  "version": "1.0.0",
+  "description": "Verify details about the coolest album of 2023",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boutchersj/amazon_challenge.git"
+  },
+  "author": "Steven Boutcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boutchersj/amazon_challenge/issues"
+  },
+  "homepage": "https://github.com/boutchersj/amazon_challenge#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.8.3",
+    "node": "^18.15.0",
+    "typescript": "^5.2.2"
+  }
+}
