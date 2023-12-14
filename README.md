@@ -1,4 +1,5 @@
-# Amazon Challenge
+# Webslinger
+### My Playwright implementation for web automation
 
 ## CI/CD
 
