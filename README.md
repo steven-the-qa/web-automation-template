@@ -12,14 +12,14 @@ Otherwise, continue to the instructions for running my solution on your machine.
 1. Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/boutchersj/amazon_challenge.git
+git clone https://github.com/boutchersj/web-slinger.git
 
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd amazon_challenge
+cd web-slinger
 ```
 
 3. Install the project dependencies:
