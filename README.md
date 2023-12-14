@@ -1,4 +1,4 @@
-# Webslinger
+# Web-Slinger
 ### My Playwright implementation for web automation
 
 ## CI/CD
