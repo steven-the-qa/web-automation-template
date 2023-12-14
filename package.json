@@ -1,20 +1,20 @@
 {
-  "name": "amazon_challenge",
-  "version": "1.0.0",
-  "description": "Verify details about the coolest album of 2023",
+  "name": "web-slinger",
+  "version": "1.0.1",
+  "description": "A Spiderman fan's Playwright implementation using TypeScript & a custom POM approach",
   "scripts": {
     "test": "npx playwright test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boutchersj/amazon_challenge.git"
+    "url": "git+https://github.com/boutchersj/web-slinger.git"
   },
   "author": "Steven Boutcher",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boutchersj/amazon_challenge/issues"
+    "url": "https://github.com/boutchersj/web-slinger/issues"
   },
-  "homepage": "https://github.com/boutchersj/amazon_challenge#readme",
+  "homepage": "https://github.com/boutchersj/web-slinger#readme",
   "devDependencies": {
     "@playwright/test": "^1.38.1",
     "@types/node": "^20.8.3",
