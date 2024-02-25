@@ -44,11 +44,11 @@ You can run my solution using ```npm test```
 
     ***
 
-    This is how Playwright recommends doing it: https://playwright.dev/docs/pom.
+    [This](https://playwright.dev/docs/pom) is how Playwright recommends doing it.
 
     They prefer to throw all their locators into the constructor, for some reason.
 
-    Other frameworks like WebdriverIO don't seem to follow this convention: https://webdriver.io/docs/pageobjects/
+    Other frameworks like WebdriverIO [don't seem to follow this convention](https://webdriver.io/docs/pageobjects/).
 
 2. HTML Report
 
@@ -73,3 +73,11 @@ You can run my solution using ```npm test```
     ```VIEWPORT_SIZE=min npm test```
 
     The default is the Macbook Air viewport size (```max```). You can set it to ```min``` if you want to run on the iPhone 12 viewport size.
+
+6. Fixtures
+
+    Fixtures add a separation of concerns to tidy up the test files. Basically, anything that goes in a ```before``` or ```after``` hook can be moved to a fixture.
+
+    All setup and teardown is taken out of the test files and put into fixtures. This means you can write setup/teardown in 1 place and reuse it in any test file.
+
+    Read more about fixtures [here](https://playwright.dev/docs/test-fixtures#creating-a-fixture).
