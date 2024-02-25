@@ -9,7 +9,9 @@ export default defineConfig({
     ['html', { open: 'never' }]
   ],
   use: {
-    testIdAttribute: 'id'
+    testIdAttribute: 'id',
+    // For debugging
+    headless: false,
   },
 
   projects: [
