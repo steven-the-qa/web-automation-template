@@ -1,5 +1,4 @@
-# Web-Slinger
-### My Playwright implementation for web automation
+# Use Playwright to find a Taylor Swift album on Amazon
 
 ## CI/CD
 
@@ -12,14 +11,14 @@ Otherwise, continue to the instructions for running my solution on your machine.
 1. Clone this repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/steven-the-qa/web-slinger.git
+git clone https://github.com/steven-the-qa/web-automation-template.git
 
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd web-slinger
+cd web-automation-template
 ```
 
 3. Install the project dependencies:
